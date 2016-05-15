@@ -22,6 +22,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../../bower_components/iron-selector/iron-selector.html">
 
 <!-- Paper elements -->
+<link rel="import" href="../../bower_components/paper-checkbox/paper-checkbox.html">
 <link rel="import" href="../../bower_components/paper-drawer-panel/paper-drawer-panel.html">
 <link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../../bower_components/paper-item/paper-item.html">
@@ -30,6 +31,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../../bower_components/paper-scroll-header-panel/paper-scroll-header-panel.html">
 <link rel="import" href="../../bower_components/paper-styles/typography.html">
 <link rel="import" href="../../bower_components/paper-toast/paper-toast.html">
+<link rel="import" href="../../bower_components/paper-toggle-button/paper-toggle-button.html">
 <link rel="import" href="../../bower_components/paper-toolbar/paper-toolbar.html">
 
 <link rel="import" href="../../styles/app-theme.html">
@@ -40,6 +42,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <style>
       :host {
         display: block;
+
+
+           --paper-checkbox-label-color: white;
       }
 
       .space {
@@ -168,6 +173,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       paper-material.dark {
         color: white;
         background: var(--dark-accent-color);
+
       }
 
       #toast .toast-hide-button {
@@ -274,12 +280,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               <div class="sidebar">
                 <paper-material elevation="1" class="dark">
                   <h3>The sidebar</h3>
-                  <pre>
-.sidebar {
-  float: left;
-   @apply(--layout-flex);
-}
-                  </pre>
+
+                  <paper-toggle-button>Meals I can make without shopping</paper-toggle-button>
+
+                  <br/>
+
+                  <paper-checkbox>Meat</paper-checkbox> <br/>
+                  <paper-checkbox>Fish</paper-checkbox> <br/>
+                  <paper-checkbox>Candy</paper-checkbox> <br/>
+                  <paper-checkbox>Whatevah</paper-checkbox> <br/>
+
                 </paper-material>
               </div>
               <div id="grid" class="cards" data-columns>
