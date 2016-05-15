@@ -19,6 +19,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
 <link rel="import" href="../../bower_components/iron-pages/iron-pages.html">
 <link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../../bower_components/iron-icons/places-icons.html">
+<link rel="import" href="../../bower_components/iron-icons/maps-icons.html">
 <link rel="import" href="../../bower_components/iron-selector/iron-selector.html">
 
 <!-- Paper elements -->
@@ -239,17 +241,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <!-- Drawer Content -->
         <paper-menu class="app-menu" attr-for-selected="data-route" selected="[[route]]">
           <a data-route="home" href="#/home">
-            <iron-icon icon="home"></iron-icon>
+            <iron-icon icon="maps:local-dining"></iron-icon>
             <span>Meals</span>
           </a>
 
           <a data-route="users" href="#/users">
-            <iron-icon icon="info"></iron-icon>
+            <iron-icon icon="places:kitchen"></iron-icon>
             <span>What's in my fridge</span>
           </a>
 
           <a data-route="contact" href="#/contact">
-            <iron-icon icon="mail"></iron-icon>
+            <iron-icon icon="shopping-basket"></iron-icon>
             <span>What to shop</span>
           </a>
         </paper-menu>
